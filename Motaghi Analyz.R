@@ -1,13 +1,13 @@
-#install.packages("readxl")
-# if(!require("devtools")) {
-#   install.packages("devtools")
-#   library("devtools")
-# }
+# install.packages("readxl")
+if(!require("devtools")) {
+  install.packages("devtools")
+  library("devtools")
+}
 
-# library("devtools")
-# devtools::install_github("mdscheuerell/muti")
+library("devtools")
+devtools::install_github("mdscheuerell/muti")
 library("readxl")
-# library(muti)
+library(muti)
 # install.packages("caret")
 # install.packages("klaR")
 library(caret)
