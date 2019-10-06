@@ -6,7 +6,7 @@ if(!require("devtools")) {
 
 library("devtools")
 devtools::install_github("mdscheuerell/muti")
-
+install.packages("readxl")
 library(readxl)
 library(muti)
 # install.packages("caret")
@@ -37,10 +37,17 @@ cor.test(Diabetes,IgA)
 cor.test(Diabetes,IgG)
 
 
-cor.test(Diabetes,)
-cor.test(Diabetes,IgG)
-cor.test(Diabetes,IgG)
-cor.test(Diabetes,IgG)
-cor.test(Diabetes,IgG)
-cor.test(Diabetes,IgG)
 
+cor.test(Diabetes, Helicobacter)
+cor.test(Diabetes, Gender)
+cor.test(Diabetes, age)
+cor.test(Diabetes, FBS)
+
+cor.test(age, FBS)
+cor.test(age, Helicobacter)
+cor.test(age, Gender)
+
+cor.test(Gender,Helicobacter)
+cor.test(Gender,FBS)
+
+cor.test(FBS,Helicobacter)
