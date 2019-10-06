@@ -6,7 +6,8 @@ if(!require("devtools")) {
 
 library("devtools")
 devtools::install_github("mdscheuerell/muti")
-library("readxl")
+
+library(readxl)
 library(muti)
 # install.packages("caret")
 # install.packages("klaR")
@@ -33,5 +34,13 @@ sum(Diabetes != Helicobacter)
 
 cor.test(Diabetes,IgM)
 cor.test(Diabetes,IgA)
+cor.test(Diabetes,IgG)
+
+
+cor.test(Diabetes,)
+cor.test(Diabetes,IgG)
+cor.test(Diabetes,IgG)
+cor.test(Diabetes,IgG)
+cor.test(Diabetes,IgG)
 cor.test(Diabetes,IgG)
 
