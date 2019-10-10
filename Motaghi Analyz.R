@@ -51,3 +51,10 @@ cor.test(Gender,Helicobacter)
 cor.test(Gender,FBS)
 
 cor.test(FBS,Helicobacter)
+
+data <- read_excel("Diabetes patients.xlsx")
+attach(data)
+cor(data)
+cor.test(data$`Hb A1C(Normalized)`,data$IgA)
+cor.test(data$`Hb A1C(Normalized)`,data$IgG)
+cor.test(data$`Hb A1C(Normalized)`,data$IgM)
